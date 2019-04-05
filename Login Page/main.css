@@ -1,16 +1,15 @@
- /****************** 
+/****************** 
   yasinbaran.com.tr
  ******************/
 
-
- /************** 
+/************** 
     Body css
  ***************/
- body {
+body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: #2a3132; 
+  background: #2a3132;
 }
 .box {
   width: 350px;
@@ -18,13 +17,13 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   background: #191919;
   border: none;
   border-radius: 25px;
   text-align: center;
 }
-h1{
+h1 {
   color: white;
   text-transform: uppercase;
   font-weight: 500;
@@ -33,7 +32,8 @@ h1{
 /************** 
  Input Fields
 ***************/
-#username, #pass{
+#username,
+#pass {
   border: 2px solid #0097e6;
   background: none;
   display: block;
@@ -52,20 +52,22 @@ h1{
 /************** 
    On Hover
 ***************/
-#username:hover, #pass:hover{
+#username:hover,
+#pass:hover {
   width: 220px;
 }
 /************** 
    On Focus
 ***************/
-#username:focus, #pass:focus{
+#username:focus,
+#pass:focus {
   width: 250px;
   border-color: #6fb98f;
 }
 /************** 
  Submit Button
 ***************/
-#submit{
+#submit {
   border: 2px solid #2ecc71;
   background: none;
   display: block;
@@ -86,10 +88,10 @@ h1{
 /************** 
    On Hover
 ***************/
-#submit:hover{
+#submit:hover {
   background: #2ecc71;
 }
 
- /****************** 
+/****************** 
   yasinbaran.com.tr
  ******************/

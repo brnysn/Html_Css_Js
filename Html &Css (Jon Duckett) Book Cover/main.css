@@ -1,12 +1,11 @@
- /****************** 
+/****************** 
   yasinbaran.com.tr
  ******************/
 
-
- /************** 
+/************** 
     Body css
  **************/
- body{
+body {
   margin: 0;
   padding: 0;
   background: #888;
@@ -14,72 +13,70 @@
   text-align: center;
 }
 span {
-  color: #F57D11;
+  color: #f57d11;
 }
-.bigContainer{
+.bigContainer {
   display: block;
   position: absolute;
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background: #393939;
-  width:750px;
-  height:750px;
+  width: 750px;
+  height: 750px;
 }
-.borders{
+.borders {
   position: absolute;
-  width:325px;
-  height:325px;
+  width: 325px;
+  height: 325px;
   top: 21%;
   right: 22%;
   transform: translate(-50%, -50%);
-  border-top: 50px solid #FF7300;
-  border-right: 50px solid  #CCC;
+  border-top: 50px solid #ff7300;
+  border-right: 50px solid #ccc;
   border-bottom: 50px solid #0bf;
-  border-left: 50px solid #AFA;
+  border-left: 50px solid #afa;
   transform: rotate(45deg);
 }
-.box{
+.box {
   position: absolute;
   width: 50px;
   height: 50px;
   z-index: 9;
 }
-.box1{
+.box1 {
   background-color: #884419;
   transform: translate(-100%, -100%);
 }
-.box2{
+.box2 {
   background-color: #b40;
   transform: translate(650%, -100%);
 }
-.box3{
+.box3 {
   background-color: #077;
   transform: translate(650%, 650%);
 }
-.box4{
-  background-color: #0A9;
+.box4 {
+  background-color: #0a9;
   transform: translate(-100%, 650%);
 }
-.textA{
-  position:absolute;
+.textA {
+  position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   font-size: 65px;
   font-family: sans-serif;
-
 }
-.textB{
-  position:absolute;
+.textB {
+  position: absolute;
   top: 56%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   font-size: 25px;
   font-family: sans-serif;
-
 }
 
- /****************** 
+/****************** 
   yasinbaran.com.tr
  ******************/
