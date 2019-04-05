@@ -1,0 +1,43 @@
+ /****************** 
+  yasinbaran.com.tr
+ ******************/
+
+ *{
+  margin: 0;
+  padding: 0;
+}
+.loading{
+  width: 100%;
+  height: 100vh;
+  background: #6a89cc;
+  display: flex;
+  align-items: center;
+}
+.loading::before{
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: #e55039;
+  left: 20%;
+  border-radius: 20px;
+  transform: translateX(-50%) rotate(0);
+  animation: loading 2000ms infinite linear;
+}
+@keyframes loading{
+  from{
+    transform: translateX(-50%) rotate(0);
+  }
+  50%{
+    left: 80%;
+  }
+  to{
+    transform: translateX(-50%) rotate(1000deg);
+
+  }
+}
+
+
+ /****************** 
+  yasinbaran.com.tr
+ ******************/
