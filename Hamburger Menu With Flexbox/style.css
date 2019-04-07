@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body div.hamburger {
+  position: absolute;
+  right: 5%;
+  top: 10px;
+}
+
+body div.hamburger div.line {
+  cursor: pointer;
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  margin: 5px;
+  -webkit-transition: 300ms all ease-out;
+  transition: 300ms all ease-out;
+}
+
+@media (min-width: 600px) {
+  body div.hamburger div.line {
+    display: none;
+  }
+}
+
+body div.hamburger div.line1 {
+  -webkit-transform: rotate(-135deg) translateX(-6px);
+          transform: rotate(-135deg) translateX(-6px);
+}
+
+body div.hamburger div.line2 {
+  display: none;
+}
+
+body div.hamburger div.line3 {
+  -webkit-transform: rotate(135deg) translateX(-5px);
+          transform: rotate(135deg) translateX(-5px);
+}
+
+body ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100vv;
+  background-color: #efefef;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body ul div {
+  position: absolute;
+  left: 5%;
+}
+
+body ul div a {
+  font-size: 1.2em;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: black;
+}
+
+@media (max-width: 600px) {
+  body ul div {
+    display: none;
+    z-index: 2;
+  }
+}
+
+body ul li.nav_item :hover {
+  -webkit-transition: 400ms all ease-out;
+  transition: 400ms all ease-out;
+  background-color: black;
+  color: #efefef;
+}
+
+body ul li.nav_item a {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  color: black;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 600px) {
+  body ul li.nav_item a {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  body ul {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    font-size: 1.2em;
+    z-index: -1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: 800ms all ease-out;
+    transition: 800ms all ease-out;
+    -webkit-clip-path: circle(1px at 91% 3%);
+            clip-path: circle(1px at 91% 3%);
+  }
+}
+
+body .show {
+  -webkit-clip-path: circle(950px at 110% -15%) !important;
+          clip-path: circle(950px at 110% -15%) !important;
+}
+/*# sourceMappingURL=style.css.map */
