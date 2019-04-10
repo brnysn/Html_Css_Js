@@ -1,99 +1,110 @@
 /****************** 
   yasinbaran.com.tr
  *****************/
+
 @mixin center {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  div.hamburger {
-    position: absolute;
-    right: 5%;
-    top: 10px;
-    div.line {
-      cursor: pointer;
-      width: 30px;
-      height: 3px;
-      background-color: black;
-      margin: 5px;
-      transition: 300ms all ease-out;
-      @media (min-width: 600px) {
-        display: none;
-      }
-    }
-    div.line1 {
-      transform: rotate(-135deg) translateX(-6px);
-    }
-    div.line2 {
-      display: none;
-    }
-    div.line3 {
-      transform: rotate(135deg) translateX(-5px);
-    }
-  }
-  ul {
-    @include center();
-    width: 100vv;
-    background-color: #efefef;
-    list-style: none;
     margin: 0;
     padding: 0;
-    div {
-      position: absolute;
-      left: 5%;
-      a {
-        font-size: 1.2em;
-        text-decoration: none;
-        text-transform: uppercase;
-        user-select: none;
-        color: black;
-      }
-      @media (max-width: 600px) {
-        display: none;
-        z-index: 2;
-      }
-    }
-    li.nav_item {
-      :hover {
-        transition: 400ms all ease-out;
-        background-color: black;
-        color: #efefef;
-      }
-      a {
-        display: block;
-        padding: 1em;
-        text-decoration: none;
-        color: black;
-        font-size: 0.9em;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        @media (max-width: 600px) {
-          padding: 30px;
+    font-family: sans-serif;
+    div.hamburger {
+        position: absolute;
+        right: 5%;
+        top: 10px;
+        div.line {
+            cursor: pointer;
+            width: 30px;
+            height: 3px;
+            background-color: black;
+            margin: 5px;
+            transition: 300ms all ease-out;
+            @media (min-width: 600px) {
+                display: none;
+            }
         }
-      }
+        div.line1 {
+            transform: rotate(-135deg) translateX(-6px);
+        }
+        div.line2 {
+            display: none;
+        }
+        div.line3 {
+            transform: rotate(135deg) translateX(-5px);
+        }
     }
-    @media (max-width: 600px) {
-      position: fixed;
-      height: 100vh;
-      width: 100%;
-      font-size: 1.2em;
-      z-index: -1;
-      flex-flow: column;
-      justify-content: center;
-      transition: 800ms all ease-out;
-      clip-path: circle(1px at 91% 3%);
+    ul {
+        @include center();
+        width: 100vv;
+        background-color: #efefef;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        div {
+            position: absolute;
+            left: 5%;
+            a {
+                font-size: 1.2em;
+                text-decoration: none;
+                text-transform: uppercase;
+                user-select: none;
+                color: black;
+            }
+            @media (max-width: 600px) {
+                display: none;
+                z-index: 2;
+            }
+        }
+        li.nav_item {
+             :hover {
+                transition: 400ms all ease-out;
+                background-color: black;
+                color: #efefef;
+            }
+            a {
+                display: block;
+                padding: 1em;
+                text-decoration: none;
+                color: black;
+                font-size: 0.9em;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                 ::before {
+                    content: "";
+                    display: block;
+                    width: 10%;
+                    height: 5px;
+                    background-color: bisque;
+                    position: absolute;
+                }
+                @media (max-width: 600px) {
+                    padding: 30px;
+                }
+            }
+        }
+        @media (max-width: 600px) {
+            position: fixed;
+            height: 100vh;
+            width: 100%;
+            font-size: 1.2em;
+            z-index: -1;
+            flex-flow: column;
+            justify-content: center;
+            transition: 800ms all ease-out;
+            clip-path: circle(0px at 91% 3%);
+        }
     }
-  }
-  .show {
-    clip-path: circle(950px at 110% -15%) !important;
-  }
+    .show {
+        clip-path: circle(950px at 110% -15%) !important;
+    }
 }
+
+
 /****************** 
      brnysn.com
  *****************/

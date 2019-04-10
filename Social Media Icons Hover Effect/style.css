@@ -1,0 +1,110 @@
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+body div.bg {
+  background-image: url(bg.jpg);
+  background-position: left top;
+  background-repeat: no-repeat;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+body div.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body div.container a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80px;
+  height: 80px;
+  background-color: #f1f1f1;
+  text-decoration: none;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+  -webkit-transition: 300ms all ease-out;
+  transition: 300ms all ease-out;
+}
+
+body div.container a i {
+  font-size: 3em;
+  color: black;
+}
+
+body div.container a.facebook:hover {
+  background: #29487d;
+}
+
+body div.container a.facebook:hover i {
+  color: white;
+}
+
+body div.container a.twitter:hover {
+  background: #38a1f3;
+}
+
+body div.container a.twitter:hover i {
+  color: white;
+}
+
+body div.container a.instagram:hover {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+body div.container a.instagram:hover i {
+  color: white;
+}
+
+body div.container a.youtube:hover {
+  background: white;
+}
+
+body div.container a.youtube:hover i {
+  color: #ed3833;
+}
+
+body div.container a.pinterest:hover {
+  background: #fffc00;
+}
+
+body div.container a.pinterest:hover i {
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

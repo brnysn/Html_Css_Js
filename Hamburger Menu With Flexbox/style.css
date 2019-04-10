@@ -1,3 +1,6 @@
+/****************** 
+  yasinbaran.com.tr
+ *****************/
 body {
   margin: 0;
   padding: 0;
@@ -101,6 +104,15 @@ body ul li.nav_item a {
   letter-spacing: 2px;
 }
 
+body ul li.nav_item a ::before {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 5px;
+  background-color: bisque;
+  position: absolute;
+}
+
 @media (max-width: 600px) {
   body ul li.nav_item a {
     padding: 30px;
@@ -123,8 +135,8 @@ body ul li.nav_item a {
             justify-content: center;
     -webkit-transition: 800ms all ease-out;
     transition: 800ms all ease-out;
-    -webkit-clip-path: circle(1px at 91% 3%);
-            clip-path: circle(1px at 91% 3%);
+    -webkit-clip-path: circle(0px at 91% 3%);
+            clip-path: circle(0px at 91% 3%);
   }
 }
 
@@ -132,4 +144,8 @@ body .show {
   -webkit-clip-path: circle(950px at 110% -15%) !important;
           clip-path: circle(950px at 110% -15%) !important;
 }
+
+/****************** 
+     brnysn.com
+ *****************/
 /*# sourceMappingURL=style.css.map */
