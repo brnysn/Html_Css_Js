@@ -1,0 +1,185 @@
+/****************** 
+  yasinbaran.com.tr
+ *****************/
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  background-color: #efefef;
+}
+
+body header {
+  height: 64px;
+  font-size: 1.6em;
+  display: block;
+  position: relative;
+  background-color: #ffffff;
+  border-bottom: 1px #797979 solid;
+}
+
+body header div.icon {
+  height: 64px;
+  width: 64px;
+  line-height: 64px;
+  margin: 0;
+  margin-left: 20px;
+  text-align: center;
+}
+
+body header div.icon a {
+  text-decoration: none;
+  color: #ff1e1e;
+}
+
+body header div.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  line-height: 64px;
+  font-size: 1.2em;
+  letter-spacing: 3px;
+  font-weight: 800;
+}
+
+body header div.search {
+  height: 64px;
+  width: 64px;
+  line-height: 64px;
+  margin-right: 20px;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+body header div.search a {
+  text-decoration: none;
+  color: #ff1e1e;
+}
+
+body main {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+body main div.news_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  body main div.news_container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+body main div.news_container div.news {
+  margin: 30px;
+  padding: 0;
+  -webkit-box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 768px) {
+  body main div.news_container div.news {
+    margin: 20px;
+    width: 310px;
+  }
+}
+
+@media (min-width: 992px) {
+  body main div.news_container div.news {
+    width: 400px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body main div.news_container div.news {
+    width: 450px;
+  }
+}
+
+body main div.news_container div.news div.bg {
+  display: block;
+  position: relative;
+  padding-top: 72%;
+}
+
+body main div.news_container div.news div.bg img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+
+body main div.news_container div.news div.text {
+  padding: 30px;
+}
+
+@media (min-width: 768px) {
+  body main div.news_container div.news div.text {
+    font-size: 0.8em;
+  }
+}
+
+@media (min-width: 992px) {
+  body main div.news_container div.news div.text {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 1200px) {
+  body main div.news_container div.news div.text {
+    font-size: 1.2em;
+  }
+}
+
+body main div.news_container div.news div.text h3.title {
+  padding-bottom: 30px;
+}
+
+body main div.news_container div.news div.text h3.title a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1em;
+}
+
+body main div.news_container div.news div.text div.category a {
+  text-decoration: none;
+  color: #ff1e1e;
+  font-size: 1em;
+  padding-right: 20px;
+  text-transform: uppercase;
+}
+
+body main div.news_container div.news div.text div.category span {
+  text-transform: uppercase;
+  color: #aaa;
+}
+
+/****************** 
+     brnysn.com
+ *****************/
+/*# sourceMappingURL=style.css.map */
