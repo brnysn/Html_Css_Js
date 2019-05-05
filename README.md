@@ -8,9 +8,9 @@ If you want me to make some stuff for you, you can contact me anytime from my ma
 
 On my personal web blog, I write about stuff that I learned recently and my interests.
 
-[yasinbaran.com.tr](yasinbaran.com.tr)
+[yasinbaran.com.tr](https://yasinbaran.com.tr/)
 
 If you want to take a look at what is happening in the world of technology, you can look at the website.
 
-[pcsemti.com](pcsemti.com)
+[pcsemti.com](https://pcsemti.com/)
 
