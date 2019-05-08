@@ -1,0 +1,90 @@
+/****************** 
+  yasinbaran.com.tr
+ ******************/
+html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html div.animals {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 90vh;
+  width: 90vw;
+}
+
+html div.animals :hover {
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+html div.animals .animal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 200px;
+  height: 200px;
+  margin: 24px;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px rgba(32, 33, 36, 0.28);
+          box-shadow: 0 0 10px rgba(32, 33, 36, 0.28);
+}
+
+html div.animals .animal img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+html div.animals .animal span {
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-size: 24px;
+  color: red;
+}
+
+/****************** 
+    brnysn.com
+ *****************/
+/*# sourceMappingURL=style.css.map */

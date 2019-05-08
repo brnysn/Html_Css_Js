@@ -1,0 +1,62 @@
+[
+  {
+    "name": "inek",
+    "key": "cow"
+  },
+  {
+    "name": "ördek",
+    "key": "duck"
+  },
+  {
+    "name": "tavuk",
+    "key": "chicken"
+  },
+  {
+    "name": "horoz",
+    "key": "rooster"
+  },
+  {
+    "name": "penguen",
+    "key": "penguin"
+  },
+  {
+    "name": "Keçi",
+    "key": "sheep"
+  },
+  {
+    "name": "fil",
+    "key": "elephant"
+  },
+  {
+    "name": "at",
+    "key": "horse"
+  },
+  {
+    "name": "kuş",
+    "key": "robin"
+  },
+  {
+    "name": "maymun",
+    "key": "ape"
+  },
+  {
+    "name": "aslan",
+    "key": "lion"
+  },
+  {
+    "name": "köpek",
+    "key": "dog"
+  },
+  {
+    "name": "kurbağa",
+    "key": "frog"
+  },
+  {
+    "name": "fare",
+    "key": "rat"
+  },
+  {
+    "name": "papağan",
+    "key": "african-grey-parrot"
+  }
+]

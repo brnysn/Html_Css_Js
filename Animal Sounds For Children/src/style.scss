@@ -1,0 +1,53 @@
+/****************** 
+  yasinbaran.com.tr
+ ******************/
+@mixin center($position) {
+  display: flex;
+  flex-direction: $position;
+  align-items: center;
+  justify-content: center;
+}
+@mixin cases($case) {
+  text-transform: $case;
+}
+$fontSize: 10px;
+html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  @include center(row);
+  // background: url(bg.jpg) top center;
+  // background-repeat: no-repeat;
+  div.animals {
+    @include center(row);
+    flex-wrap: wrap;
+    height: 90vh;
+    width: 90vw;
+    :hover {
+      transition: all 200ms;
+      transform: scale(1.05);
+    }
+    .animal {
+      @include center(column);
+      width: 20 * $fontSize;
+      height: 20 * $fontSize;
+      margin: 2.4 * $fontSize;
+      padding: $fontSize;
+      border-radius: 1 * $fontSize;
+      box-shadow: 0 0 $fontSize rgba(32,33,36,0.28);
+      img {
+        transform: scale(1.2);
+      }
+      span {
+        @include cases(uppercase);
+        margin-top: $fontSize;
+        font-size: 2.4 * $fontSize;
+        color: red;
+      }
+    }
+  }
+}
+/****************** 
+    brnysn.com
+ *****************/
