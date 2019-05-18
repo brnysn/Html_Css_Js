@@ -2,47 +2,70 @@
   yasinbaran.com.tr
  ******************/
 // To change size just change $size property
-
-@mixin center($position) {
- display: flex;
- flex-direction: $position;
- align-items: center;
- justify-content: center;
-}
-// To change size just change $size property
 $size: 10px;
 
+@mixin center($position) {
+  display: flex;
+  flex-direction: $position;
+  align-items: center;
+  justify-content: center;
+}
+
 html {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
- background: #20639B;
- div.clock {
-  @include center(row);
-  height: 100vh;
-  div.clock-ring {
-   width: 30*$size;
-   height: 30*$size;
-   border: 2*$size solid #ffffff;
-   border-radius: 50%;
-   background: #f6d55c;
-   box-shadow: 0 0 2*$size #ffffff, 0 0 0.5*$size #000000,
-    inset 0 0 0.5*$size #000000, inset 0 0 3*$size #ffffff;
-   position: relative;
-   div.hand {
-    width: 50%;
-    height: 0.5*$size;
-    clip-path: polygon(100% 0, 0 50%, 100% 100%);
-    border: none;
-    border-radius: 0.5*$size;
-    position: absolute;
-    top: 50%;
-    transform-origin: 100%;
-    transition: all 1000ms linear;
-    background: #000000;
-   }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #20639b;
+  div.clock {
+    @include center(row);
+    height: 100vh;
+    div.clock-ring::before {
+      content: "";
+      width: 2 * $size;
+      height: 2 * $size;
+      background: #000000;
+      position: absolute;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      border: none;
+      border-radius: 50%;
+    }
+    div.clock-ring {
+      width: 30 * $size;
+      height: 30 * $size;
+      border: 2 * $size solid #ffffff;
+      border-radius: 50%;
+      background: #f6d55c;
+      box-shadow: 0 0 2 * $size #ffffff, 0 0 0.5 * $size #000000,
+        inset 0 0 0.5 * $size #000000, inset 0 0 3 * $size #ffffff;
+      position: relative;
+      div.hand {
+        width: 50%;
+        // clip-path: polygon(100% 0, 0 50%, 100% 100%);
+        border: none;
+        border-radius: 0.5 * $size;
+        position: absolute;
+        top: 50%;
+        transform-origin: 100%;
+        transition: all 1000ms linear;
+        background: #000000;
+      }
+      div#hour {
+        height: 1 * $size;
+        transform: translateY(-.5*$size);
+      }
+      div#min {
+        height: 0.5 * $size;
+        transform: translateY(-.25*$size);
+      }
+      div#sec {
+        height: 0.2 * $size;
+        transform: translateY(4*$size);
+        background: red;
+      }
+    }
   }
- }
 }
 
 /****************** 

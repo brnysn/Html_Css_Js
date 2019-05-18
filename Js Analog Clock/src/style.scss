@@ -1,6 +1,8 @@
 /****************** 
   yasinbaran.com.tr
  ******************/
+ // To change size just change $size property
+ $size: 10px;
 
  @mixin center($position) {
   display: flex;
@@ -8,7 +10,6 @@
   align-items: center;
   justify-content: center;
 }
-$size: 10px;
 
 html{
   margin: 0;
