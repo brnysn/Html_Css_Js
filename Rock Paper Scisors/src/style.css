@@ -1,6 +1,116 @@
 /****************** 
   yasinbaran.com.tr
  *****************/
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #25272e;
+  color: #ffffff;
+  font-family: sans-serif;
+}
+
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  height: 100px;
+  width: 100vw;
+  text-align: center;
+  background: #ffffff;
+}
+
+body header h1 {
+  color: #25272e;
+  font-size: 40px;
+}
+
+body main div.resultSection {
+  display: block;
+  text-align: center;
+  width: 100vw;
+  height: 100px;
+}
+
+body main div.resultSection h2#result {
+  margin: 50px auto;
+  padding: 20px;
+  border: 2px #ffffff solid;
+  width: 300px;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+body main div.selectSection {
+  text-align: center;
+}
+
+body main div.selectSection h2.move {
+  text-transform: lowercase;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+body main div.selectSection div.options {
+  margin-bottom: 100px;
+}
+
+body main div.selectSection div.options div.option {
+  display: inline;
+  margin: 30px;
+  padding: 25px;
+  border: 2px #ffffff solid;
+  -webkit-box-shadow: 0 0 20px #ffffff;
+          box-shadow: 0 0 20px #ffffff;
+  border-radius: 50%;
+}
+
+body main div.selectSection div.options div.option img {
+  width: 80px;
+}
+
+body main div.selectSection div.options div.option :hover {
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+  -webkit-transform: translateY(-15px) scale(1.1);
+          transform: translateY(-15px) scale(1.1);
+}
+
+body main div.selectSection div.options div.option img.active {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+body main div.selectSection div.options div.option img.pasive {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+body main div.selectSection div.computer div#computerOption {
+  display: none;
+  padding: 25px;
+  border: 2px #ffffff solid;
+  -webkit-box-shadow: 0 0 20px #ffffff;
+          box-shadow: 0 0 20px #ffffff;
+  border-radius: 50%;
+}
+
+body main div.selectSection div.computer div#computerOption img {
+  width: 80px;
+}
+
 /****************** 
   yasinbaran.com.tr
  *****************/

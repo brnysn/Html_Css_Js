@@ -1,7 +1,7 @@
 /****************** 
   yasinbaran.com.tr
  *****************/
- 
+
 $size: 10px;
 
 @mixin center($direction) {
@@ -10,7 +10,86 @@ $size: 10px;
   align-items: center;
   justify-content: center;
 }
-
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #25272e;
+  color: #ffffff;
+  font-family: sans-serif;
+  header {
+    @include center(column);
+    margin: 0;
+    height: 100px;
+    width: 100vw;
+    text-align: center;
+    background: #ffffff;
+    h1 {
+      color: #25272e;
+      font-size: 4 * $size;
+    }
+  }
+  main {
+    div.resultSection {
+      display: block;
+      text-align: center;
+      width: 100vw;
+      height: 100px;
+      h2#result {
+        margin: 5 * $size auto;
+        padding: 2 * $size;
+        border: 2px #ffffff solid;
+        width: 300px;
+        font-size: 2.4 * $size;
+        text-transform: uppercase;
+      }
+    }
+    div.selectSection {
+      text-align: center;
+      h2.move {
+        text-transform: lowercase;
+        font-size: 3 * $size;
+        font-weight: 700;
+      }
+      div.options {
+        margin-bottom: 10 * $size; // silmeyi unutma
+        div.option {
+          display: inline;
+          margin: 3 * $size;
+          padding: 2.5 * $size;
+          border: 2px #ffffff solid;
+          box-shadow: 0 0 2 * $size #ffffff;
+          border-radius: 50%;
+          img {
+            width: 8 * $size;
+          }
+          :hover {
+            transition: all 100ms ease-in-out;
+            transform: translateY(-15px) scale(1.1);
+          }
+          img.active {
+            transform: scale(1.2);
+          }
+          img.pasive {
+            transform: scale(0.8);
+          }
+        }
+      }
+      div.computer {
+        div#computerOption {
+          display: none;
+          padding: 2.5 * $size;
+          border: 2px #ffffff solid;
+          box-shadow: 0 0 2 * $size #ffffff;
+          border-radius: 50%;
+          img {
+            width: 8 * $size;
+          }
+        }
+      }
+    }
+  }
+}
 
 /****************** 
   yasinbaran.com.tr
