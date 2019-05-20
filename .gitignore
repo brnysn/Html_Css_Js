@@ -11,6 +11,8 @@ Learning JsLocalStorage
 # Icon must end with two \r
 Icon
 
+# .gitignore file itself :-D
+.gitignore
 
 # Thumbnails
 ._*
