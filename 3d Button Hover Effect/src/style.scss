@@ -1,0 +1,77 @@
+/****************** 
+  yasinbaran.com.tr
+ *****************/
+
+$size: 10px;
+$page_bg: #f1f1f1;
+$bg_color: #49beb7;
+$color: #085f63;
+
+@import url("https://fonts.googleapis.com/css?family=Nunito:700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: $page_bg;
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: $bg_color;
+      width: 40 * $size;
+      height: 10 * $size;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 0.5 * $size;
+      border-radius: 8 * $size;
+      transform-style: preserve-3d;
+      transition: 800ms all ease-in-out;
+      &:hover {
+        transform: rotatex(360deg);
+      }
+      &::before {
+        content: "";
+        top: 0.5 * $size;
+        bottom: 0.5 * $size;
+        left: 0.5 * $size;
+        right: 0.5 * $size;
+        position: absolute;
+        border: 0.3 * $size solid $color;
+        border-radius: 8 * $size;
+        transform-style: preserve-3d;
+        transform: translateZ(-2 * $size);
+      }
+      &::after {
+        content: "";
+        top: 0.5 * $size;
+        bottom: 0.5 * $size;
+        left: 0.5 * $size;
+        right: 0.5 * $size;
+        position: absolute;
+        border: 0.3 * $size solid $color;
+        border-radius: 8 * $size;
+        transform-style: preserve-3d;
+        transform: translateZ(2 * $size);
+      }
+      span {
+        display: block;
+        color: $color;
+        font-weight: 700;
+        font-size: 3 * $size;
+        transform-style: preserve-3d;
+        transform: translateZ(5 * $size);
+      }
+    }
+  }
+}
+
+/******************
+    brnysn.com
+*****************/

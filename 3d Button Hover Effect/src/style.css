@@ -1,0 +1,99 @@
+/****************** 
+  yasinbaran.com.tr
+ *****************/
+@import url("https://fonts.googleapis.com/css?family=Nunito:700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+* body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background: #f1f1f1;
+}
+
+* body a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #49beb7;
+  width: 400px;
+  height: 100px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 5px;
+  border-radius: 80px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: 800ms all ease-in-out;
+  transition: 800ms all ease-in-out;
+}
+
+* body a:hover {
+  -webkit-transform: rotatex(360deg);
+          transform: rotatex(360deg);
+}
+
+* body a::before {
+  content: "";
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  position: absolute;
+  border: 3px solid #085f63;
+  border-radius: 80px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: translateZ(-20px);
+          transform: translateZ(-20px);
+}
+
+* body a::after {
+  content: "";
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  position: absolute;
+  border: 3px solid #085f63;
+  border-radius: 80px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: translateZ(20px);
+          transform: translateZ(20px);
+}
+
+* body a span {
+  display: block;
+  color: #085f63;
+  font-weight: 700;
+  font-size: 30px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: translateZ(50px);
+          transform: translateZ(50px);
+}
+
+/******************
+    brnysn.com
+*****************/
+/*# sourceMappingURL=style.css.map */
