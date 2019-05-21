@@ -15,15 +15,13 @@ $color: #085f63;
   box-sizing: border-box;
   font-family: "Nunito", sans-serif;
   body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
     height: 100vh;
     background: $page_bg;
     a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      display: grid;
+      place-items: center;
       background: $bg_color;
       width: 40 * $size;
       height: 10 * $size;
