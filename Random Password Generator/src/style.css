@@ -1,0 +1,229 @@
+/****************** 
+  yasinbaran.com.tr
+ *****************/
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+* body {
+  height: 100vh;
+  background: #25272e;
+}
+
+* body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  height: 100px;
+  width: 100vw;
+  text-align: center;
+  background: #ffffff;
+  -webkit-box-shadow: 0 0 10px #ffffff;
+          box-shadow: 0 0 10px #ffffff;
+}
+
+* body header h1 {
+  color: #25272e;
+  font-size: 40px;
+}
+
+* body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* body main .select {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 500px;
+  height: 370px;
+  margin: 50px auto;
+  background: #4f4f4f;
+  border: none;
+  border-radius: 10px;
+  line-height: 50px;
+}
+
+* body main .select div.wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+}
+
+* body main .select div.wrap div.left,
+* body main .select div.wrap div.right {
+  height: 100%;
+}
+
+* body main .select div.wrap div.right {
+  border-left: 2px solid #ffffff;
+}
+
+* body main .select div.wrap input[type="checkbox"] {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+* body main .select div.bottom {
+  margin-top: 30px;
+}
+
+* body main .select div.bottom input[type="number"] {
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+  width: 45px;
+  height: 35px;
+}
+
+* body main .select label {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: white;
+  font-size: 20px;
+  margin: 30px;
+}
+
+* body main .generate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* body main .generate a {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background: #4f4f4f;
+  width: 300px;
+  height: 70px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 5px;
+  border-radius: 80px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: 800ms all ease-in-out;
+  transition: 800ms all ease-in-out;
+}
+
+* body main .generate a:hover {
+  -webkit-transform: rotateX(360deg);
+          transform: rotateX(360deg);
+}
+
+* body main .generate a::before {
+  content: "";
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  position: absolute;
+  border: 3px solid yellow;
+  border-radius: 80px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: translateZ(-20px);
+          transform: translateZ(-20px);
+}
+
+* body main .generate a::after {
+  content: "";
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  position: absolute;
+  border: 3px solid yellow;
+  border-radius: 80px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: translateZ(20px);
+          transform: translateZ(20px);
+}
+
+* body main .generate a span {
+  display: block;
+  color: yellow;
+  font-weight: 700;
+  font-size: 25px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: translateZ(50px);
+          transform: translateZ(50px);
+}
+
+* body main .generate div#result {
+  margin: 40px auto;
+  color: yellow;
+  font-size: 30px;
+}
+
+/******************
+    brnysn.com
+*****************/
+/*# sourceMappingURL=style.css.map */

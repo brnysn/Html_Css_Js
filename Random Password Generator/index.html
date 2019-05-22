@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Random Password Generator</title>
+  <meta name="author" content="Yasin BARAN brnysn.com / yasinbaran.com.tr" />
+  <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+  <!-- yasinbaran.com.tr / brnysn.com -->
+  <header>
+    <h1>Random Password Generator</h1>
+  </header>
+
+  <main>
+    <div class="select">
+      <div class="wrap">
+        <div class="left">
+          <label for="lower">Lowercase</label>
+          <input type="checkbox" name="lower" id="lower" checked>
+          <label for="upper">Uppercase</label>
+          <input type="checkbox" name="upper" id="upper" checked>
+        </div>
+        <div class="right">
+          <label for="number">Numbers</label>
+          <input type="checkbox" name="number" id="number" checked>
+          <label for="symbol">Symbols</label>
+          <input type="checkbox" name="symbol" id="symbol" checked>
+        </div>
+      </div>
+      <div class="bottom">
+        <label for="digit">Digit Number</label>
+        <input type="number" name="digit" id="digit" min="6" max="30" value="8">
+      </div>
+    </div>
+
+    <div class="generate">
+      <a onClick="generate()">
+        <span>Generate</span>
+      </a>
+      <div id="result"></div>
+    </div>
+  </main>
+
+  <script src="src/main.js"></script>
+</body>
+
+</html>

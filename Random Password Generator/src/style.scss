@@ -1,0 +1,146 @@
+/****************** 
+  yasinbaran.com.tr
+ *****************/
+
+$size: 10px;
+$page_bg: #25272e;
+$bg_color: #4f4f4f;
+$color: yellow;
+
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
+@mixin center($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  body {
+    height: 100vh;
+    background: $page_bg;
+    header {
+      @include center();
+      margin: 0;
+      height: 10 * $size;
+      width: 100vw;
+      text-align: center;
+      background: #ffffff;
+      box-shadow: 0 0 1 * $size #ffffff;
+      h1 {
+        color: #25272e;
+        font-size: 4 * $size;
+      }
+    }
+    main {
+      @include center(column);
+      .select {
+        position: relative;
+        @include center(column);
+        width: 50 * $size;
+        height: 37 * $size;
+        margin: 5 * $size auto;
+        background: #4f4f4f;
+        border: none;
+        border-radius: $size;
+        line-height: 5 * $size;
+        div.wrap {
+          @include center(row);
+          margin-bottom: 4 * $size;
+          div.left,
+          div.right {
+            height: 100%;
+          }
+          div.right {
+            border-left: 0.2 * $size solid #ffffff;
+          }
+          input[type="checkbox"] {
+            cursor: pointer;
+            width: 2 * $size;
+            height: 2 * $size;
+          }
+        }
+        div.bottom {
+          margin-top: 3 * $size;
+          input[type="number"] {
+            cursor: pointer;
+            font-size: 2 * $size;
+            text-align: center;
+            width: 4.5 * $size;
+            height: 3.5 * $size;
+          }
+        }
+        label {
+          user-select: none;
+          color: white;
+          font-size: 2 * $size;
+          margin: 3 * $size;
+        }
+      }
+      .generate {
+        @include center(column);
+        a {
+          display: grid;
+          place-items: center;
+          background: $bg_color;
+          width: 30 * $size;
+          height: 7 * $size;
+          cursor: pointer;
+          text-transform: uppercase;
+          text-decoration: none;
+          letter-spacing: 0.5 * $size;
+          border-radius: 8 * $size;
+          transform-style: preserve-3d;
+          transition: 800ms all ease-in-out;
+          &:hover {
+            transform: rotateX(360deg);
+          }
+          &::before {
+            content: "";
+            top: 0.5 * $size;
+            bottom: 0.5 * $size;
+            left: 0.5 * $size;
+            right: 0.5 * $size;
+            position: absolute;
+            border: 0.3 * $size solid $color;
+            border-radius: 8 * $size;
+            transform-style: preserve-3d;
+            transform: translateZ(-2 * $size);
+          }
+          &::after {
+            content: "";
+            top: 0.5 * $size;
+            bottom: 0.5 * $size;
+            left: 0.5 * $size;
+            right: 0.5 * $size;
+            position: absolute;
+            border: 0.3 * $size solid $color;
+            border-radius: 8 * $size;
+            transform-style: preserve-3d;
+            transform: translateZ(2 * $size);
+          }
+          span {
+            display: block;
+            color: $color;
+            font-weight: 700;
+            font-size: 2.5 * $size;
+            transform-style: preserve-3d;
+            transform: translateZ(5 * $size);
+          }
+        }
+        div#result {
+          margin: 4 * $size auto;
+          color: $color;
+          font-size: 3 * $size;
+        }
+      }
+    }
+  }
+}
+
+/******************
+    brnysn.com
+*****************/
