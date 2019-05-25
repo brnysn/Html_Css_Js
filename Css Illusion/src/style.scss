@@ -1,0 +1,132 @@
+/****************** 
+  yasinbaran.com.tr
+ *****************/
+
+$duration: 3000ms;
+$size: 10px;
+$page_bg: #25272e;
+$bg_color: #4f4f4f;
+$color: yellow;
+
+@import url("https://fonts.googleapis.com/css?family=Nunito:400&display=swap");
+@mixin center($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}
+@mixin rotate($deg) {
+  transform: translate(-50%, -50%) rotateZ($deg + deg);
+}
+@keyframes circle {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(2900%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  body {
+    height: 100vh;
+    background: $page_bg;
+    header {
+      @include center();
+      margin: 0;
+      height: 10 * $size;
+      width: 100vw;
+      text-align: center;
+      background: #ffffff;
+      box-shadow: 0 0 1 * $size #ffffff;
+      h1 {
+        color: #25272e;
+        font-size: 4 * $size;
+      }
+    }
+    main {
+      margin-top: 2 * $size;
+      display: grid;
+      place-content: center;
+      div.upperContainer {
+        text-align: center;
+        margin-bottom: 2 * $size;
+        label {
+          color: #ffffff;
+          text-transform: uppercase;
+          font-size: 1.5 * $size;
+          letter-spacing: 0.5 * $size;
+          span {
+            color: yellow;
+          }
+          &:after{
+            content: 'ms';
+            color: yellow;
+            text-transform: lowercase;
+          }
+        }
+        .slidecontainer {
+          width: 100%;
+        }
+        .slider {
+          width: 100%;
+          height: 25px;
+          background: #d3d3d3;
+          outline: none;
+          opacity: 0.7;
+          transition: opacity 0.2s;
+        }
+
+        .slider:hover {
+          opacity: 1;
+        }
+      }
+      .container {
+        position: relative;
+        width: 60 * $size;
+        height: 60 * $size;
+        // background: $bg_color;
+        border: none;
+        border-radius: 50%;
+        .line {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          // background: $color;
+          width: 60 * $size;
+          height: 0.1 * $size;
+          .circle {
+            position: absolute;
+            width: 2 * $size;
+            height: 2 * $size;
+            top: -1 * $size;
+            border: none;
+            border-radius: 50%;
+            background: $color;
+            animation: circle $duration infinite ease-in-out;
+          }
+          @for $i from 1 to 19 { //* for each circle to delay
+            .#{circle}#{$i} {
+              animation-delay: calc(#{$duration}/ 36 * #{$i});
+            }
+          }
+        }
+        @for $i from 1 to 19 { //* for each line to rotate
+          .#{line}#{$i} {
+            @include rotate(10 * $i);
+          }
+        }
+      }
+    }
+  }
+}
+
+/******************
+    brnysn.com
+*****************/
